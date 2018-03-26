@@ -22,4 +22,21 @@ public class Exercise7 {
 		}
 		return addDigits(String.valueOf(result));
 	}
+
+	public static int addDigits_GreenWood_version(String number){         //using loop instead of recusion
+        int num = Integer.parseInt(number);
+        while (num / 10 != 0){
+            int sum = 0;
+            int copy_num = num;
+
+            while (copy_num != 0){
+                sum = sum + copy_num % 10;
+                copy_num = copy_num / 10;
+            }
+
+            num = sum;
+        }
+
+        return num;
+    }
 }
