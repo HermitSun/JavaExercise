@@ -32,6 +32,7 @@ public class Exercise36 {
         }
         return re;
     }
+	//content below is copied from https://blog.csdn.net/qq_21808961/article/details/77990940
     //求排列数  
     public static int A(int up,int bellow)  
     {  
